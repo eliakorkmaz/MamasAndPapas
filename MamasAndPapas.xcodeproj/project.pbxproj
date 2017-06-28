@@ -28,7 +28,7 @@
 		8ED74B331F034F43001C9100 /* ProductPhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED74B321F034F43001C9100 /* ProductPhotoGallery.swift */; };
 		8ED74B351F035167001C9100 /* ProductPhotoGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED74B341F035167001C9100 /* ProductPhotoGalleryCell.swift */; };
 		8ED74B371F0359D1001C9100 /* ProductDetailSizePickCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED74B361F0359D0001C9100 /* ProductDetailSizePickCell.swift */; };
-		8F7B76DEB219E74EF6C5F2B3 /* Pods_MamasAndPapas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8275B081C5EE3517E75FE7 /* Pods_MamasAndPapas.framework */; };
+		F71FFA1DB132F7A9FD99833E /* Pods_MamasAndPapas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE52B12CBA36B7512EAB9887 /* Pods_MamasAndPapas.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6F8275B081C5EE3517E75FE7 /* Pods_MamasAndPapas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamasAndPapas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4B6BBC1F0285AC0077582E /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
 		8E4B6BBE1F028D1D0077582E /* MamaAndPapaServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MamaAndPapaServiceProvider.swift; sourceTree = "<group>"; };
 		8E4B6BC51F0299560077582E /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
@@ -77,8 +76,9 @@
 		8ED74B321F034F43001C9100 /* ProductPhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPhotoGallery.swift; sourceTree = "<group>"; };
 		8ED74B341F035167001C9100 /* ProductPhotoGalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPhotoGalleryCell.swift; sourceTree = "<group>"; };
 		8ED74B361F0359D0001C9100 /* ProductDetailSizePickCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailSizePickCell.swift; sourceTree = "<group>"; };
-		94392D9831D7F1EEAE235E09 /* Pods-MamasAndPapas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamasAndPapas.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas.release.xcconfig"; sourceTree = "<group>"; };
-		F0A492B37E623BE263CD942C /* Pods-MamasAndPapas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamasAndPapas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas.debug.xcconfig"; sourceTree = "<group>"; };
+		C529E379CAB7BA9E85975B29 /* Pods-MamasAndPapas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamasAndPapas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas.debug.xcconfig"; sourceTree = "<group>"; };
+		D0CD7205F54450717F161F57 /* Pods-MamasAndPapas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamasAndPapas.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas.release.xcconfig"; sourceTree = "<group>"; };
+		FE52B12CBA36B7512EAB9887 /* Pods_MamasAndPapas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamasAndPapas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7B76DEB219E74EF6C5F2B3 /* Pods_MamasAndPapas.framework in Frameworks */,
+				F71FFA1DB132F7A9FD99833E /* Pods_MamasAndPapas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,10 +107,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5DCA733C514C959C63573C99 /* Frameworks */ = {
+		583FCF77FBF481584EF565C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6F8275B081C5EE3517E75FE7 /* Pods_MamasAndPapas.framework */,
+				FE52B12CBA36B7512EAB9887 /* Pods_MamasAndPapas.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,8 +144,8 @@
 				8E8E04E61F01B35900C3338E /* MamasAndPapasTests */,
 				8E8E04F11F01B35900C3338E /* MamasAndPapasUITests */,
 				8E8E04D01F01B35900C3338E /* Products */,
-				ECA7FFFBE05E813F6A758DB5 /* Pods */,
-				5DCA733C514C959C63573C99 /* Frameworks */,
+				BF99C92382B59D17954BD2DB /* Pods */,
+				583FCF77FBF481584EF565C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -214,11 +214,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ECA7FFFBE05E813F6A758DB5 /* Pods */ = {
+		BF99C92382B59D17954BD2DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F0A492B37E623BE263CD942C /* Pods-MamasAndPapas.debug.xcconfig */,
-				94392D9831D7F1EEAE235E09 /* Pods-MamasAndPapas.release.xcconfig */,
+				C529E379CAB7BA9E85975B29 /* Pods-MamasAndPapas.debug.xcconfig */,
+				D0CD7205F54450717F161F57 /* Pods-MamasAndPapas.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -230,12 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E8E04F71F01B35900C3338E /* Build configuration list for PBXNativeTarget "MamasAndPapas" */;
 			buildPhases = (
-				E24A317679C5315170E84CD5 /* [CP] Check Pods Manifest.lock */,
+				AE337B7D31924B7296239F78 /* [CP] Check Pods Manifest.lock */,
 				8E8E04CB1F01B35900C3338E /* Sources */,
 				8E8E04CC1F01B35900C3338E /* Frameworks */,
 				8E8E04CD1F01B35900C3338E /* Resources */,
-				70F7B28C34C439FCB8F3DEE8 /* [CP] Embed Pods Frameworks */,
-				997BB9623EDF787CA4757F3E /* [CP] Copy Pods Resources */,
+				66D081A7A8404E48468D217D /* [CP] Embed Pods Frameworks */,
+				50CE206BBFC3D9703F5702BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,7 +359,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		70F7B28C34C439FCB8F3DEE8 /* [CP] Embed Pods Frameworks */ = {
+		50CE206BBFC3D9703F5702BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D081A7A8404E48468D217D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,22 +408,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		997BB9623EDF787CA4757F3E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MamasAndPapas/Pods-MamasAndPapas-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E24A317679C5315170E84CD5 /* [CP] Check Pods Manifest.lock */ = {
+		AE337B7D31924B7296239F78 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -592,7 +592,7 @@
 		};
 		8E8E04F81F01B35900C3338E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0A492B37E623BE263CD942C /* Pods-MamasAndPapas.debug.xcconfig */;
+			baseConfigurationReference = C529E379CAB7BA9E85975B29 /* Pods-MamasAndPapas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMG7MB78VY;
@@ -606,7 +606,7 @@
 		};
 		8E8E04F91F01B35900C3338E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94392D9831D7F1EEAE235E09 /* Pods-MamasAndPapas.release.xcconfig */;
+			baseConfigurationReference = D0CD7205F54450717F161F57 /* Pods-MamasAndPapas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WMG7MB78VY;
