@@ -59,7 +59,6 @@ class ProductSearchController: UITableViewController, UITableViewDataSourcePrefe
                 return
             }
             
-            trace()
             self.searchProvider.request(.search(searchString: "", page: 0, hitsPerPage: 10)) { [weak self] result in
                 guard let `self` = self else {
                     return
