@@ -21,7 +21,9 @@ class ProductDetailController: UITableViewController {
     
     var detail: JSON = [:] {
         didSet {
-            cellGallery.items = self.detail["media"].arrayValue
+            self.cellGallery.items = self.detail["media"].arrayValue
+             self.cellSize.prepare()
+            self.cellSize.items = self.detail["configurableAttributes"].arrayValue.first?["options"].arrayValue ?? []
         }
     }
     var slug: String? {

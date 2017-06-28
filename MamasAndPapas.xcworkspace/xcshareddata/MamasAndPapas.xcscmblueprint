@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F8F6A2173CC373271C27461EE5580FC7BB1FB5AB" : 9223372036854775807,
+    "FE22D8738DDA2DF8FC27B2446AEA492AF0938877" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1CBA3869-59FB-4426-8B04-F208EDE8E107",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F8F6A2173CC373271C27461EE5580FC7BB1FB5AB" : "Mahallem\/Vendors\/",
+    "FE22D8738DDA2DF8FC27B2446AEA492AF0938877" : "UICollectionViewLeftAlignedLayout\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MamasAndPapas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MamasAndPapas.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:away4m\/Vendors.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F8F6A2173CC373271C27461EE5580FC7BB1FB5AB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mokagio\/UICollectionViewLeftAlignedLayout",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FE22D8738DDA2DF8FC27B2446AEA492AF0938877"
+    }
+  ]
+}

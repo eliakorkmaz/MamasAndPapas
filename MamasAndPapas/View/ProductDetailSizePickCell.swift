@@ -10,11 +10,13 @@ import Foundation
 import UIKit
 import SwiftyJSON
 import Vendors
+import ObjectiveC
 import Kingfisher
-class ProductDetailSizePickCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDataSourcePrefetching {
-    @available(iOS 10.0, *)
-    func collectionView(_: UICollectionView, prefetchItemsAt _: [IndexPath]) {
-        
+import Signals
+class ProductDetailSizePickCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    var selectedSignal:Signal<JSON> = Signal<JSON>()
+    func numberOfSections(in _: UICollectionView) -> Int {
+        return 1
     }
     
     @available(iOS 6.0, *)
@@ -29,31 +31,66 @@ class ProductDetailSizePickCell: UITableViewCell, UICollectionViewDataSource, UI
         return cell
     }
     
+    func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var data = items[indexPath.item]
+
+        items = items.map({ (json) -> JSON in
+            var data_ = json
+            data_["isSelected"].bool = json["optionId"].intValue == data["optionId"].intValue
+            return data_
+        })
+        
+        self.selectedSignal.fire(data)
+    }
+    
     @IBOutlet var collection: UICollectionView!
     
+    override func awakeFromNib() {
+        
+    }
+    
+    func prepare() {
+        collection.delegate = self
+        collection.dataSource = self
+        collection.isPagingEnabled = false
+    }
+    
+    func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
+        return CGSize(width: 90, height: 44)
+    }
+
     var items: [JSON] = [] {
         didSet {
-            collection.prefetchDataSource = self
-            collection.delegate = self
-            collection.dataSource = self
-            collection.isPagingEnabled = true
-            let layout = UICollectionViewFlowLayout()
-            layout.scrollDirection = .horizontal
-            let numberOfItemInRow = 4
-            let spacing: CGFloat = 4.0
-            layout.minimumLineSpacing = 4
-            layout.minimumInteritemSpacing = 4
-            layout.itemSize = CGSize(width: (self.width - spacing * (numberOfItemInRow - 1).g) / numberOfItemInRow.g, height: 44.0)
-            collection.setCollectionViewLayout(layout, animated: true)
-            collection.reloadData()
+        
+            self.collection.reloadData()
+            
         }
     }
 }
 
 class ProductDetailSizeDisplayCell: UICollectionViewCell {
+    
+    @IBOutlet weak var lblSize: UILabel!
+    
+    override func prepareForReuse() {
+    }
+    
     var data: JSON = [:] {
         didSet {
+            self.lblSize.text = data["label"].stringValue
             
+            if data["isSelected"].boolValue {
+                self.lblSize.textColor = UIColor.white
+                self.backgroundColor = UIColor.black
+            } else {
+                self.lblSize.textColor = UIColor.black
+                self.backgroundColor = UIColor.white
+                 self.borderColor = UIColor.black
+            }
+            
+            self.layoutAndWait { 
+                
+            }
         }
     }
 }
