@@ -20,7 +20,7 @@ class SearchProductTableCell: UITableViewCell {
         didSet {
             self.lblTitle.text = self.data["name"].stringValue
             self.lblDetail.text = self.data["description"].strippedHTML
-            self.lblPrice.text = self.data["price"].stringValue + " " + (self.data["priceType"].string ?? "AED")
+            self.lblPrice.text = (data["priceType"].string ?? "AED") + " \((self.data["specialPrice"].double ?? self.data["price"].doubleValue))"
             
             self.imgProduct.setCDNImage(json: self.data["image"])
         }
