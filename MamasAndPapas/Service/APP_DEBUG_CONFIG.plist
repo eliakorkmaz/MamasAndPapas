@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>socket</key>
+	<string></string>
+	<key>backend</key>
+	<string>https://www.mamasandpapas.ae/</string>
+	<key>cdn</key>
+	<string>https://prod.mnpcdn.ae/small_light(p=listing2x,of=jpeg)/pub/media/catalog/product/</string>
+	<key>analytic</key>
+	<string></string>
+	<key>adjust</key>
+	<string></string>
+	<key>gmsPlaces</key>
+	<string></string>
+	<key>onesignal</key>
+	<string></string>
+	<key>appName</key>
+	<string>MamasAndPapas</string>
+	<key>forceUpdate</key>
+	<true/>
+</dict>
+</plist>
