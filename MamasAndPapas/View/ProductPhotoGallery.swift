@@ -28,6 +28,7 @@ class ProductDetailGalleryCell: UITableViewCell, UICollectionViewDataSource, UIC
     func collectionView(_: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: ProductPhotoGalleryCell.objectName, for: indexPath) as! ProductPhotoGalleryCell
         cell.data = items[indexPath.item]
+        cell.image.layer.cornerRadius = 10
         return cell
     }
     

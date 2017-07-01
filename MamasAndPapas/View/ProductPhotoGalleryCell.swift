@@ -15,6 +15,7 @@ class ProductPhotoGalleryCell: UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
     var data: JSON = [:] {
         didSet {
+            image.layer.cornerRadius = 15
             image.setCDNImage(json: data["src"])
         }
     }

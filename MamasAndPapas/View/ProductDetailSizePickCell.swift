@@ -28,12 +28,13 @@ class ProductDetailSizePickCell: UITableViewCell, UICollectionViewDataSource, UI
     func collectionView(_: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collection.dequeueReusableCell(withReuseIdentifier: ProductDetailSizeDisplayCell.objectName, for: indexPath) as! ProductDetailSizeDisplayCell
         cell.data = items[indexPath.item]
+        
         return cell
     }
     
     func collectionView(_: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         var data = items[indexPath.item]
-
+    
         items = items.map({ (json) -> JSON in
             var data_ = json
             data_["isSelected"].bool = json["optionId"].intValue == data["optionId"].intValue

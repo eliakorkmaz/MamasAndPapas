@@ -115,6 +115,7 @@ class ProductSearchController: UITableViewController, UITableViewDataSourcePrefe
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: SearchProductTableCell = tableView.dequeueReusableCell(withIdentifier: SearchProductTableCell.objectName, for: indexPath) as! SearchProductTableCell
         cell.data = paginator.hits[indexPath.row]
+        cell.imgProduct.layer.cornerRadius = 5
         return cell
     }
     
