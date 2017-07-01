@@ -17,4 +17,4 @@ pod install --repo-update
 - Added Navigation Bar icon
 - Updated README
 
-![alt-text-1](https://github.com/eliakorkmaz/MamasAndPapas/blob/master/im1.png) ![alt-text-2](https://github.com/eliakorkmaz/MamasAndPapas/blob/master/im2.png)
+![alt-text-1](https://github.com/eliakorkmaz/MamasAndPapas/blob/master/im1.png)           ![alt-text-2](https://github.com/eliakorkmaz/MamasAndPapas/blob/master/im2.png)
